@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ body{ background-color:white;
+ color:black;
+ }
+ .dark-mode
+ { background-color:black;
+ color:white;}
+  </style>
+
+ <meta charset="utf-8">
+ <title></title>
+</head>
+<body>
+ <button onclick="great()">call me batmen</button>
+ <p id="demo">this is my text</p>
+ 
+<button onclick="showdate()">Click to show the date</button>
+ <button onclick="da()">click to convert F to C</button>
+ <p id='thep'></p>
+ <p id='demo'></p>
+ <p id='233'></p>
+ <p id="good"></p>
+ <p id='123'></p>
+ <p id="c"></p>
+
+<script>
+function aq(f){
+        return(5/9)*(f-32)}
+function da(){
+    var s=parseInt(prompt('Type in the F'));
+    document.getElementById('c').innerHTML=aq(s);
+}
+
+
+    switch(new Date().getHours()){
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+        case 11:
+        case 12: document.getElementById('123').innerHTML ='Good morning';
+           break;
+        case 13:
+        case 14:
+        case 15:
+        case 16:
+        case 17: document.getElementById('123').innerHTML ='Good afternoon';
+           break;
+        case 18:
+        case 19:
+        case 20:
+        case 21:
+        case 22:
+        case 23: document.getElementById('123').innerHTML ='Good afternoon';
+
+
+
+
+
+
+    }
+ function great() {document.body.classList.toggle('dark-mode');
+ 
+ }
+ function showdate(){
+alert(Date()) ;
+
+}
+var a=(prompt('what is your gender?'));
+if (a=='female') {
+ document.write('hi,girl')
+}
+else {
+ document.write('hey,bro')
+}
+
+
+var myarray =['a',[1,2,3],2,4,true,false];
+myarray[3] = 'b';
+document.write(myarray.length);
+function goodtag(){
+ document.getElementById('233').innerHTML=''
+}
+
+ var a=parseInt(prompt('guess the number'));
+ var b=Math.floor(Math.random()*11);
+ if (a>b) {
+  document.getElementById('good').innerHTML='your guess is too big!';
+
+ }
+ else if(a<b){
+  document.getElementById('good').innerHTML='your guess is too small!';
+ }
+  else{
+  document.getElementById('good').innerHTML='your guess is right!'; 
+  }
+
+</script>
+
+</body>
+</html>
